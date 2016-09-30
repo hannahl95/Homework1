@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.calvin.hel7.homework1.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/valueEditText2"
+        android:layout_alignBaseline="@+id/valueTextView2"
+        android:layout_alignBottom="@+id/valueTextView2"
+        android:layout_alignLeft="@+id/valueEditText1"
+        android:layout_alignStart="@+id/valueEditText1"
+        android:text="1" />
+
+    <TextView
+        android:text="Operation:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/operationTextView"
+        android:layout_below="@+id/valueEditText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Value 2:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/valueTextView2"
+        android:layout_below="@+id/valueEditText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/valueEditText1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="1" />
+
+    <TextView
+        android:text="Value 1:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valueTextView"
+        android:layout_alignBaseline="@+id/valueEditText1"
+        android:layout_alignBottom="@+id/valueEditText1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/operators"
+        android:layout_alignBottom="@+id/operationTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/valueEditText2"
+        android:layout_alignStart="@+id/valueEditText2" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/operationTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/calculateButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_alignBaseline="@+id/calculateButton"
+        android:layout_alignBottom="@+id/calculateButton"
+        android:layout_alignRight="@+id/valueEditText2"
+        android:layout_alignEnd="@+id/valueEditText2"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp" />
+</RelativeLayout>
